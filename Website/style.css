@@ -5,44 +5,46 @@
 }
 
 .preloader {
-    /* Center the preloader content horizontally and vertically */
-    position: relative; /* Keep it on top of the page content */
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; /* 100% viewport height */
+    background-color: rgb(24, 24, 70);
     align-items: center;
-    justify-content: center; /* Align horizontally in center */
-    background-color: royalblue; /* Semi-transparent dark background */
-    z-index: 999; /* Ensure preloader is above other elements */
-    color: white;
-    margin: 0 auto;
-}
-  
-.preloader img {
-    width: 100px; /* Set the width of the image */
-    height: 100px; /* Set the height of the image */
-    animation: spin 2s linear infinite; /* Rotate the image */
-    border-radius:300%
+    justify-content: center;
 }
 
 .container {
-    height: 150px;
-
-    justify-items: center;
+    display: block;
     align-items: center;
+    justify-items: center;
 }
+
 .pic {
-    width: 104px;
-    height: 104px;
-    margin: auto auto;   
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: black;
+    align-items: center;
+    text-align: center;
 }
 
 .greeting {
-    height: 19px;
-    width: 104px;
-    font-size: large;
-    margin: auto auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 4rem;
+    text-decoration: solid;
+    text-align: center;
+    font-weight: bold;
+    color: #ebd4d4;
+    font-family: 'Roboto', sans-serif;
 }
 
+.content {
+    padding: 5px;
+    font-size: 25px;
+    font-style:italic;
+    color: #ebd4d4;
+    text-align: center;
+}
