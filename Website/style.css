@@ -37,7 +37,7 @@
     text-decoration: solid;
     text-align: center;
     font-weight: bold;
-    color: #ebd4d4;
+    color: #ededed;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -45,6 +45,112 @@
     padding: 5px;
     font-size: 25px;
     font-style:italic;
-    color: #ebd4d4;
+    color: #ededed;
     text-align: center;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    color: white;
+    height: 14vh;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu {
+    justify-items: right;
+}
+
+.logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    height: 5vh;
+    width: 7rem;
+    align-items: center;
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar .menu a{
+    width: 100vw;
+    display: relative;
+    margin-right: 10px auto auto auto;
+    align-items: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.navbar .menu a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.slider {
+    height: 86vh;
+    width: 100%;
+}
+
+.web_dev {
+    height: 86vh;
+    width: 100%;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.web_dev .content {
+    width: 500px;
+    margin-left: 10vh;
+}
+
+.web_dev .content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+
+.web_dev .content p {
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    font-style: normal;
+}
+
+.web_dev .content .btn-box {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    height: 3rem;
+    width: 170px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: navy;
+}
+
+.web_dev .content .btn-box:hover {
+    background-color: rgb(48, 48, 236);
+}
+
+.web_dev .content .btn-box a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    color: #ededed;
 }
