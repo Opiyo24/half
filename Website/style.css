@@ -104,7 +104,7 @@
 }
 
 .web_dev {
-    height: 86vh;
+    height: 100vh;
     width: 100%;
     background-color: grey;
     background-size: cover;
@@ -329,4 +329,53 @@
     font-style: normal;
     font-weight: bold;
     color: #ededed;
+}
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(37, 35, 35);
+    color: #ededed;
+}
+
+.about h2 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: underline;
+    font-style: bold;
+    font-size: 2rem;
+}
+
+
+.about .description {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about .description .image {
+    border: none;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    background: none;
+}
+
+.about .description p {
+    border: none;
+    margin: 20px;
+    margin-top: 10px;
+    text-align: justify;
+    height: 50vh;
+    width: 600px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: normal;
 }
