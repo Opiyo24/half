@@ -99,6 +99,8 @@
 .slider {
     height: 86vh;
     width: 100%;
+    display: block;
+    position: relative;
 }
 
 .web_dev {
@@ -113,12 +115,13 @@
 }
 
 .web_dev .content {
-    width: 500px;
+    width: 700px;
     margin-left: 10vh;
+    margin-top: 20vh;
 }
 
 .web_dev .content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     color: white;
     text-align: left;
@@ -127,7 +130,7 @@
 }
 
 .web_dev .content p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     text-align: left;
     font-style: normal;
@@ -149,6 +152,179 @@
 }
 
 .web_dev .content .btn-box a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    color: #ededed;
+}
+
+.software {
+    height: 86vh;
+    width: 100%;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.software .content {
+    width: 700px;
+    margin-left: 10vh;
+    margin-top: 20vh;
+}
+
+.software .content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+
+.software .content p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    font-style: normal;
+}
+
+.software .content .btn-box {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    height: 3rem;
+    width: 170px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: navy;
+}
+
+.software .content .btn-box:hover {
+    background-color: rgb(48, 48, 236);
+}
+
+.software .content .btn-box a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    color: #ededed;
+}
+
+
+
+.accountant {
+    height: 86vh;
+    width: 100%;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.accountant .content {
+    width: 700px;
+    margin-left: 10vh;
+    margin-top: 20vh;
+}
+
+.accountant .content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+
+.accountant .content p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    font-style: normal;
+}
+
+.accountant .content .btn-box {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    height: 3rem;
+    width: 170px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: navy;
+}
+
+.accountant .content .btn-box:hover {
+    background-color: rgb(48, 48, 236);
+}
+
+.accountant .content .btn-box a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    color: #ededed;
+}
+
+
+
+
+
+
+
+.Data-analyst {
+    height: 86vh;
+    width: 100%;
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.Data-analyst .content {
+    width: 700px;
+    margin-left: 10vh;
+    margin-top: 20vh;
+}
+
+.Data-analyst .content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+
+.Data-analyst .content p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    font-style: normal;
+}
+
+.Data-analyst .content .btn-box {
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    height: 3rem;
+    width: 170px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: navy;
+}
+
+.Data-analyst .content .btn-box:hover {
+    background-color: rgb(48, 48, 236);
+}
+
+.Data-analyst .content .btn-box a {
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
