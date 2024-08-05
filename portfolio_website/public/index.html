@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="w-full md:w-1/3">
-            <img src="../src/images/hero-2.png" alt="hero" class="w-4/5">
+            <img src="../src/images/hero-3.png" alt="hero" class="w-4/5">
         </div>
     </section>
     <!-- about -->
@@ -56,7 +56,7 @@
             <div class="w-full md:w-2/5  overflow-hidden mx-auto rounded-full md:rounded-2xl">
                 <img src="../src/images/headshot.png" alt="">
             </div>
-            <div class="w-full md:w-3/5 border-t-4 border-b-4  md:border-l-8 md:border-r-8 border-white text-heroText md:bg-heroText px-8 py-8">
+            <div class="w-full md:w-3/5 border-t-4 md:border-t-0 md:border-b-0 border-b-4  md:border-l-8 md:border-r-8 border-white text-heroText md:bg-heroText px-8 py-8">
                 <div class="w-full  md:text-black text-4xl justify-center align-middle">
                     I'm <span class="font-bold">GABRIEL</span>
                 </div>
@@ -73,70 +73,106 @@
         </div>
      </section>
      <!-- Skills -->
-    <section>
-        <div>
+    <section class="bg-black text-white">
+        <div class="container bg-black py-16">
             <div>
-                <h1>Skills</h1>
+                <div class="flex justify-center text-3xl md:text-5xl text-heroText bg-black py-3 px-6 font-bold md:font-extrabold">Skills</div>
             </div>
-            <div>
-                <div>
-                    <h2>Frontend</h2>
-                    <div>
-                        <div>
-                            <img src="../src/images/html.png" alt="html">
-                            <p>HTML</p>
-                        </div>
-                        <div>
-                            <img src="../src/images/css.png" alt="css">
-                            <p>CSS</p>
-                        </div>
-                        <div>
-                            <img src="../src/images/js.png" alt="js">
-                            <p>JS</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Backend</h2>
-                    <div>
-                        <div>
-                            <img src="../src/images/python.png" alt="node">
-                            <p>Python</p>
-                        </div>
-                        <div>
-                            <img src="../src/images/django.png" alt="django">
-                            <p>Django</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Database</h2>
-                    <div>
-                        <div>
-                            <img src="../src/images/mysql.png" alt="mysql">
-                            <p>MySQL</p>
-                        </div>
-                        <div>
-                            <img src="../src/images/sqlite.png" alt="sqlite">
-                            <p>SQLite</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h2>Other Tools</h2>
-                    <div>
-                        <div>
-                            <img src="../src/images/devops.png" alt="devops">
-                            <p>DevOps</p>
-                        </div>
-                        <div>
-                            <img src="../src/images/sqlite.png" alt="sqlite">
-                            <p>SQLite</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex flex-col flex-wrap py-6 space-y-8">
+              <!-- Frontend -->
+              <div class=" w-full sm:w-auto mb-4 border-b-4 pb-6 border-heroText">
+                <h3 class="text-xl text-heroText font-semibold mb-2">Frontend Development</h3>
+                <ul class="flex flex-row  gap-5 md:gap-12">
+                  <li class="flex flex-col items-center space-x-2">
+                    <i class="fab fa-html5 text-orange-600 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">HTML</span>
+                  </li>
+                  <li class="flex flex-col items-center space-x-2">
+                    <i class="fab fa-css3 text-blue-600 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">CSS</span>
+                  </li>
+                  <li class="flex flex-col items-center space-x-2">
+                    <i class="fab fa-js text-yellow-500 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">JavaScript</span>
+                  </li>
+                  <li class="flex flex-col items-center space-x-2">
+                    <i class="fab fa-bootstrap text-purple-600 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">Bootstrap</span>
+                  </li>
+                  <li class="flex flex-col items-center space-x-2">
+                    <i class="fab fa-css3-alt text-teal-500 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">Tailwind CSS</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Backend -->
+              <div class="w-full sm:w-auto mb-4 border-b-4 pb-6 border-heroText">
+                <h3 class="text-xl font-semibold text-heroText mb-2">Backend Development</h3>
+                <ul class="flex flex-row gap-5 md:gap-12">
+                  <li class="flex flex-col items-center space-2">
+                    <i class="fab fa-python text-blue-500 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">Python</span>
+                  </li>
+                  <li class="flex flex-col items-center space-2">
+                    <i class="fas fa-cogs text-white text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">Django</span>
+                  </li>
+                  <li class="flex flex-col items-center space-2">
+                    <i class="fas fa-c text-blue-600 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">C Programming</span>
+                  </li>
+                  <li class="flex flex-col items-center space-2">
+                    <i class="fab fa-node text-green-600 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">Node.js</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Database -->
+              <div class="w-full sm:w-auto mb-4 border-b-4 pb-6 border-heroText">
+                <h3 class="text-xl font-semibold text-heroText mb-2">Database Management</h3>
+                <ul class="flex flex-row gap-5 md:gap-12">
+                  <li class="flex flex-col items-center space-2">
+                    <i class="fas fa-database text-orange-500 text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">MySQL</span>
+                  </li>
+                  <li class="flex flex-col items-center space-3">
+                    <i class="fas fa-database text-white text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">SQLite</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Other Tools -->
+              <div class="w-full sm:w-auto mb-4 border-b-4 pb-6 border-heroText">
+                <h3 class="text-xl font-semibold text-heroText mb-2">Development Tools</h3>
+                <ul class="flex flex-row gap-5 md:gap-12">
+                  <li class="flex flex-col items-center gap-3">
+                    <i class="fas fa-tools text-white text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">DevOps</span>
+                  </li>
+                  <li class="flex flex-col items-center gap-3">
+                    <i class="fas fa-terminal text-white text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">Bash</span>
+                  </li>
+                  <li class="flex flex-col items-center gap-3">
+                    <i class="fa-brands fa-git-alt text-white text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">Git</span>
+                  </li>
+                  <li class="flex flex-col items-center gap-3">
+                    <i class="fa-brands fa-github text-white text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">GitHub</span>
+                  </li>
+                  <li class="flex flex-col items-center gap-3">
+                    <i class="fa-solid fa-code text-white text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">VSCode</span>
+                  </li>
+                  <li class="flex flex-col items-center gap-3">
+                    <i class="fa-brands fa-wordpress text-white text-6xl md:text-9xl"></i>
+                    <span class="text-lg md:text-2xl">Wordpress</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </div>
     </section>
 
     <!-- projects -->
