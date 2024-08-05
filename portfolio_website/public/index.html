@@ -2,24 +2,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gabriel | Developer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Nav Bar -->
+    <section class="bg-black pt-0 mt-0">
+        <!-- Nav Bar -->
     <header>
         <nav class="container mx-auto flex items-center py-4 mt-4 sm:mt-12">
             <!-- <h1>Hello</h1> -->
-            <div class="py-1"> 
+            <div class="py-1 text-heroText"> 
                 LOGO  
             </div>         
-            <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-blue-400 uppercase text-xs md:justify-right">
-                <li class="cursor-pointer">Home</li>
-                <li class="cursor-pointer">About</li>
-                <li class="cursor-pointer">contact</li>
+            <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-heroText uppercase text-xs md:justify-right">
+                <li id="Home" class="cursor-pointer"><a href="Home">Home</a></li>
+                <li id="About" class="cursor-pointer"><a href="About">About</a></li>
+                <li id="Projects" class="cursor-pointer"><a href="Projects">Projects</a></li>
+                <li id="Tools" class="cursor-pointer"><a href="Tools">Tools</a></li>
+                <li id="Contact" class="cursor-pointer"><a href="Contact">Contact</a></li>
             </ul>
         </nav>
      </header>
+
+    <!-- Hero Section -->
+    <div class="container mx-auto flex items-center justify-between py-48 lg:py-60">
+        <div class="w-2/3">
+            <!-- <h6 class="text-sm">hello I'm</h6> -->
+            <h1 class="text-3xl font-bold text-heroText lg:text-4xl">GABRIEL <span class="text-lg font-normal lg:text-xl">here,</span></h1>
+            <h6 class="text-heroText lg:text-xl">I build</h6>
+            <h1 class="text-8xl font-bold text-heroText lg:text-9xl">WEBSITES!</h1>
+            <div class="flex mt-12 lg:px-6">
+                <button class="bg-heroText text-black px-6 py-3 mr-6 rounded-lg hover:bg-black hover:text-heroText hover:border hover:border-heroText">learn more...</button>
+                
+            </div>
+        </div>
+        <div class="w-1/3">
+            <img src="../src/images/hero-2.png" alt="hero" class="w-4/5">
+        </div>
+    </section>
+    <!-- about -->
+     <section>
+        <div>
+            <div>
+                {image}
+            </div>
+            <div>
+                Gabriel is a kenya Mombasa absed web developers who harnesses various web tools to bring forth a tantalizing and impressive web experience to all we clients who interact with his work. His UI/UX  skills help to build ser friendly and easy to navigate websites while making suire to drive the desired message home.
+            </div>
+        </div>
+     </section>
 
 </body>
 </html>

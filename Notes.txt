@@ -1,0 +1,192 @@
+##################### SET UP ##############################
+
+$ npm init -y 
+    Initialize package.json file
+
+$ npm install -D tailwindcss
+$ npx tailwindcss init
+    Creates a taiwind config.js file
+
+    /**@type {important('tailwindcss').config} */
+    module.exports = {
+        content: [],
+        theme: {
+            extend: {},
+        },
+        plugins: [],
+    }
+
+package.json - for new script configurations
+
+"scripts": {
+    "anything": "npx taiilwindcss -i ./src/input.css -o ./diost/output.css --watch"
+},
+
+$npm run anything
+- builds the custom css
+
+
+-> Images added to image folder in src folder
+
+############################# HTML ########################
+
+- Add favicon link in head section
+- Add fontawwesome link in head section
+- Remix icon link
+
+~~~~~~~~~~~~ Nav Bar ~~~~~~~~~~~~~~~~~~
+- Adding custom colors
+- In the extend section of the config.js file
+
+    tailwind.config.js file
+
+
+    /**@type {important('tailwindcss').config} */
+    module.exports = {
+        content: [],
+        theme: {
+            screens: {
+                sm: '480px',
+                md: '768px'.
+                lg: '1024px',
+            },
+            extend: {
+                colors: {
+                    primaryColor: '#010a5e',
+                    primaryColorLight: '#010d78',
+                    secondaryColor: '#FFCC00',
+                    paragraphColor: '#c0c0c0',
+                    whiteColor: '#fff',
+                },
+            },
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem',
+                    sm: '1.5rem',
+                }
+            },
+            fontFamily: {
+                oswald: ['oswald', 'sans-serif'],
+                dmsans: ['DM Sans', 'sans-serif']
+            }
+        },
+        plugins: [],
+    }
+
+- Container class - deos not automatically position in the middle
+    op-1 Include mx-auto class
+    op-2 configure in the tailwind.config.js file
+        - Below extend property add container property
+
+
+- Flex
+    flex flex-col - arrange elements vertically
+    flex flex-row - arrange elements horizontally
+    flex flex-1 - for uniform magnification
+
+- Breakpoints
+    Can be configure in tailwind.config.js file
+    Inside theme object
+
+
+- On small screens, hide navbar link items and display ham burger in stead
+- On small screens. arrange navbar link items in flex-col (verically) and configure appropriately
+    Text-center
+    Justify-center
+    Text0color
+    font-weight
+    hover-colors
+    hover-transition
+
+- Use js script to menu items with X icon for close
+- Use js script to hide menu items when x icon is clicked (onclick)
+- Use onclick script to hode menu items whenever any is clicked
+
+<nav>
+    <div>
+        logo
+    </div>
+
+    <div ID="" class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-border-secondaryColor">
+        <ul>
+            <li>
+                <a href="#home" class="hover:text-secondaryColor ease-in duration-200">Home</a>
+
+            </li>
+            <li>
+                <a href="#about" class="hover:text-secondaryColor ease-in duration-200">About</a>
+
+            </li>
+            <li>
+                <a href="#menu" class="hover:text-secondaryColor ease-in duration-200">Menu</a>
+
+            </li>
+            <li>
+                <a href="#review" class="hover:text-secondaryColor ease-in duration-200">Review</a>
+
+            </li>
+            <li>
+                <a href="#contact" class="hover:text-secondaryColor ease-in duration-200">Contact</a>
+
+            </li>
+        </ul>
+
+        <div>
+            <i class="ri-close-line" class="absolute top-[0.7rem] text-sxl cursor-pointer"></i>
+        </div>
+    </div>
+
+    <div class="flex items-center gap-5">
+        <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+    </div>
+    <div>
+        <i class="ri-menu-2-line cursor-pointer ml-4 text-xl"></i>
+    </div>
+</nav>
+
+input.css file
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities
+
+    @layer {
+        body {
+            @apply text-whiteColor bg-primaryColor tracking-wider
+        }
+    }
+
+
+- Position 
+    relative
+    absolute
+    fixed
+
+
+- Font family
+    Google fonts - copy link and paste in input.css file - at top
+
+    In tailwind.config.js file, below container property, specify font families
+
+~~~~~~~~~~~~~~~~~~~~~~~~ SCRIPT~~~~~~~~~~~~~~~~~~~~~
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const closeIcon = document.getElementById('nav-close');
+const navLink = documentt.querySelectorAll(".nav__link");
+
+navLink.forEach(link =>
+    link.addEventListener("click", () => {
+        navMenu.classList.add("hidden")
+    })
+)
+
+closeIcon.addEventListener("click", () => {
+    navMenu.classList.add("hidden")
+})
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.remove('hidden')
+})
+
+
