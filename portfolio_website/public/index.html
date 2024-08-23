@@ -17,7 +17,7 @@
               </div> 
                     
             <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-heroText uppercase text-xl md:justify-right">
-                <li id="Home" class="cursor-pointer"><a href="Home">Home</a></li>
+                <!-- <li id="Home" class="cursor-pointer"><a href="Home">Home</a></li> -->
                 <li id="About" class="cursor-pointer"><a href="#About">About</a></li>
                 <li id="Projects" class="cursor-pointer"><a href="#Projects">Projects</a></li>
                 <li id="Tools" class="cursor-pointer"><a href="#Tools">Tools</a></li>
@@ -31,14 +31,14 @@
 
 
     <!-- Hero Section -->
-    <div class="container flex flex-col-reverse md:flex-row items-center justify-between py-48 lg:py-60">
+    <div class="container flex flex-col-reverse md:flex-row items-center justify-between py-48 md:py-80">
         <div class="text-center md:text-left w-full md:w-2/3">
             <!-- <h6 class="text-sm">hello I'm</h6> -->
             <h1 class="text-xl md:text-3xl font-bold text-heroText lg:text-4xl">GABRIEL <span class="text-lg font-normal lg:text-xl">here,</span></h1>
             <h6 class="text-heroText lg:text-xl">I build</h6>
             <h1 class="text-8xl font-bold text-heroText lg:text-9xl">WEBSITES!</h1>
             <div class="mx-auto md:justify-left mt-12 px-8 md:px-8 lg:px-6">
-                <button class="bg-heroText text-black text-xl px-16 py-3 mr-6 rounded-lg hover:bg-black hover:text-heroText hover:border hover:border-heroText">learn more...</button>
+                <button class="bg-heroText text-black text-xl px-16 py-3 mr-6 rounded-lg hover:bg-black hover:text-heroText hover:border hover:border-heroText" href="#About">learn more...</button>
                 
             </div>
         </div>
@@ -47,7 +47,7 @@
         </div>
     </section>
     <!-- about -->
-     <section id="About" class="bg-masterBg">
+     <section id="About" class="bg-masterBg md:py-40">
         <!-- <div class="container flex flex-1 justify-center text-3xl md:text-5xl text-heroText pb-16  font-bold md:font-extrabold">
             About The Developer
         </div> -->
@@ -57,7 +57,7 @@
             </div>
             <div class="w-full md:w-3/5 border-t-4 md:border-t-0 md:border-b-0 border-b-4  md:border-l-8 md:border-r-8 border-white text-heroText md:bg-heroText px-8 py-8">
                 <div class="w-full  md:text-black text-4xl justify-center align-middle">
-                    I'm <span class="font-bold">GABRIEL</span>
+                     <span class="font-bold">GABRIEL</span>,
                 </div>
                 <div class="w-full  md:text-black text-4xl justify-center align-middle mb-4 font-bold">
                     WEB DEVELOPER
@@ -71,7 +71,7 @@
             </div>
         </div>
      </section>
-     <!-- Technoligies -->
+     <!-- Technologies -->
     <section class="bg-black text-white">
         <div class="container bg-black py-16">
             <div>
@@ -175,13 +175,15 @@
     </section>
 
     <!-- projects -->
-     #TODO: Hidden descriptions
-    <section class="bg-masterBg text-heroText py-20">
+    <section class="bg-masterBg text-heroText md:py-80">
       <div class="container mx-auto p-4">
+        <div>
+          <div class="flex justify-center text-3xl md:text-5xl text-heroText bg-black py-32 px-6 font-bold md:font-extrabold">Recent Projects</div>
+      </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- Project 1 -->
-          <div class="bg-white rounded-lg shadow-lg p-1">
-            <img src="../src/images/engage_hrms.PNG" alt="engage logo" class="w-full h-52 object-cover rounded-lg">
+          <div class="bg-gray-500 rounded-lg shadow-lg p-1">
+            <img src="../src/images/engage_hrms.PNG" alt="engage logo" class="w-full h-52 object-contain rounded-lg">
             <div class="mt-4 hidden">
               <h3 class="text-lg font-bold">ENGAGEHRMS</h3>
               <p class="text-sm text-gray-600">Full Stack Web Application</p>
@@ -189,46 +191,46 @@
             </div>
           </div>
           <!-- Project 2 -->
-          <div class="bg-white rounded-lg shadow-lg p-1">
+          <!-- <div class="bg-white rounded-lg shadow-lg p-1">
             <img src="../src/images/off-dock.jpg" alt="off dock services logo" class="w-full h-52 object-cover rounded-lg">
             <div class="mt-4 hidden">
               <h3 class="text-lg font-bold">OFF-DOCK SERVICES</h3>
               <p class="text-sm text-gray-600">Website</p>
               <p class="text-sm">Static website</p>
             </div>
-          </div>
+          </div> -->
           <!-- Project 3 -->
-          <div class="bg-white rounded-lg shadow-lg p-1">
+          <!-- <div class="bg-white rounded-lg shadow-lg p-1">
             <img src="../src/images/logo-bookmark-white.png" alt="bookmark manager logo" class="w-full h-52 object-cover rounded-lg">
             <div class="mt-4 hidden">
               <h3 class="text-lg font-bold">BOOKMARK MANAGER</h3>
               <p class="text-sm text-gray-600">Front End Web Application</p>
               <p class="text-sm">Webpage bookmark tool</p>
             </div>
-          </div>
+          </div> -->
           <!-- Project 4 -->
-          <div class="bg-white rounded-lg shadow-lg p-1  place-items-center">
-            <img src="../src/images/health_connect.png" alt="health connect logo" class="w-full h-52 object-cover rounded-lg">
+          <div class="bg-gray-500 rounded-lg shadow-lg p-1  place-items-center">
+            <img src="../src/images/health_connect.png" alt="health connect logo" class="w-full h-52 object-contain rounded-lg">
             <div class="mt-4 hidden">
               <h3 class="text-lg font-bold">HEALTH CONNECT</h3>
               <p class="text-sm text-gray-600">Full Stack Web Application</p>
-              <p class="text-sm">Doctor's Appointment scheduler</p>
+              <p class="text-sm">Doctor's Appointment Scheduler</p>
             </div>
           </div>
           <!-- Project 5 -->
-          <div class="bg-white rounded-lg shadow-lg p-1">
-            <img src="../src/images/activity_log.png" alt="activity log logo" class="w-full h-52 object-cover rounded-lg">
+          <div class="bg-gray-500 rounded-lg shadow-lg p-1">
+            <img src="../src/images/activity_log.png" alt="activity log logo" class="w-full h-52 object-contain rounded-lg">
             <div class="mt-4 hidden">
               <h3 class="text-lg font-bold">ACTIVITY LOG</h3>
               <p class="text-sm text-gray-600">Desktop Application</p>
-              <p class="text-sm">Tailored activity logger</p>
+              <p class="text-sm">Tailored Activity Logger</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- contacts section -->
-    <section class="bg-masterBg text-heroText py-20" id="contact">
+    <section class="bg-masterBg text-heroText py-44 md:py-80" id="contact">
       <div class="container mx-auto p-4">
         <h2 class="text-5xl text-center font-bold mb-16">Get in Touch</h2>
         
@@ -259,7 +261,7 @@
               
             </p>
           </div>
-        </div> #TODO: Add social media links| Hidden
+        </div>
         <form class="w-full mb-8 hidden">
           <div class="flex flex-wrap -mx-3 mb-6 justify-center">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
