@@ -15,6 +15,7 @@ module.exports = {
         masterBg: '000',
         heroPrimary: '#0b206c',
         heroText: '#08D665',
+        hoverText: '#00ffea',
       }
     },
     container: {
